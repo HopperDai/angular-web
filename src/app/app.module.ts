@@ -3,6 +3,7 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
+import {NgZorroAntdModule} from 'ng-zorro-antd';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import {AppRoutingModule} from './app-routing.module';
   ],
   imports: [
     AppRoutingModule,
-    BrowserModule
+    BrowserModule,
+    NgZorroAntdModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
