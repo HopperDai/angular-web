@@ -1,6 +1,6 @@
 #### font-awesome
 
-[document](http://fontawesome.io/icons/)
+[document](http://fontawesome.io/icons/)   
 
 - install ```npm install font-awesome --save```
 - import 
