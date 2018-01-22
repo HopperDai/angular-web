@@ -1,3 +1,23 @@
 // 前端的菜单列表
 
-export const menu = ['index', 'faAwesome'];
+interface Menu {
+  code: string;
+  subMenu?: any;
+}
+
+export const menu: Menu[] = [{
+  code: 'index',
+}, {
+  code: 'faAwesome',
+}, {
+  code: 'testSubmenu',
+  subMenu: [{
+    code: 'submenu1',
+    subMenu: [{
+      code: 'submenu11',
+      subMenu: [{
+        code: 'submenu11',
+      }]
+    }]
+  }]
+}];

@@ -1,0 +1,10 @@
+.menu-box {
+  height: 100%;
+}
+
+
+@for $i from 1 to 5 {
+  .menu-item-#{$i} {
+    padding-left: calc(24px * #{$i});
+  }
+}

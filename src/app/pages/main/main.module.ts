@@ -4,6 +4,7 @@ import {CommonModule} from '@angular/common';
 import {MainRoutingModule} from './main-routing.module';
 import {MainPageComponent} from './main-page/main-page.component';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
+import {SidebarMenuComponent} from './sidebar-menu/sidebar-menu.component';
 
 @NgModule({
   imports: [
@@ -11,7 +12,8 @@ import {NgZorroAntdModule} from 'ng-zorro-antd';
     MainRoutingModule,
     NgZorroAntdModule
   ],
-  declarations: [MainPageComponent]
+  declarations: [MainPageComponent, SidebarMenuComponent],
+  exports: [SidebarMenuComponent]
 })
 export class MainModule {
 }

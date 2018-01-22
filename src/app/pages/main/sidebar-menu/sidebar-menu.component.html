@@ -1,0 +1,25 @@
+<ul *ngIf="!isSubmenu" nz-menu [nzMode]="'inline'" nzTheme='dark' class="menu-box">
+  <div *ngFor="let item of menuData">
+    <li nz-menu-item *ngIf="!item.subMenu" [ngClass]="menuItemClass">
+      <span title>{{getMenuTitleByCode(item.code)}}</span>
+    </li>
+    <li nz-submenu *ngIf="!!item.subMenu" [ngClass]="menuItemClass">
+      <span title>{{getMenuTitleByCode(item.code)}}</span>
+      <app-sidebar-menu [menuData]="item.subMenu" [isSubmenu]="true" [menuLevel]="menuLevel+1"></app-sidebar-menu>
+    </li>
+  </div>
+</ul>
+
+<ul *ngIf="isSubmenu">
+  <ng-template ngFor let-item [ngForOf]="menuData">
+    <li nz-menu-item *ngIf="!item.subMenu" [ngClass]="menuItemClass">
+      <span title>{{getMenuTitleByCode(item.code)}}</span>
+    </li>
+    <li nz-submenu *ngIf="!!item.subMenu" [ngClass]="menuItemClass">
+      <span title>{{getMenuTitleByCode(item.code)}}</span>
+      <app-sidebar-menu [menuData]="item.subMenu" [isSubmenu]="true" [menuLevel]="menuLevel+1"></app-sidebar-menu>
+    </li>
+  </ng-template>
+</ul>
+
+

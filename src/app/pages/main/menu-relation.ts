@@ -16,12 +16,30 @@ const demo: MenuRelation[] = [{
   iconUrl: ''
 }];
 
+const test: MenuRelation[] = [{
+  code: 'testSubmenu',
+  label: '测试子菜单',
+  url: '',
+  iconUrl: ''
+}, {
+  code: 'submenu1',
+  label: '子菜单1',
+  url: '',
+  iconUrl: ''
+}, {
+  code: 'submenu11',
+  label: '子菜单11',
+  url: '',
+  iconUrl: ''
+}];
+
 const menuRelation = [
   ...index,
-  ...demo
+  ...demo,
+  ...test
 ];
 
 // 根据 code 获取菜单关系对象
-export const getMenuRetion = (code) => {
+export const getMenuRelation = (code) => {
   return menuRelation.find(relation => relation.code === code);
 };

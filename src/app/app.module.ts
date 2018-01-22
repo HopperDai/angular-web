@@ -4,6 +4,7 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import {NgZorroAntdModule} from 'ng-zorro-antd';
   imports: [
     AppRoutingModule,
     BrowserModule,
+    BrowserAnimationsModule,
     NgZorroAntdModule.forRoot()
   ],
   providers: [],

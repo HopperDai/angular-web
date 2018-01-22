@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {menu} from '../menu';
+import {getMenuRelation} from '../menu-relation';
 
 @Component({
   selector: 'app-main-page',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() { }
+  menuData = [];
+
+  constructor() {
+  }
 
   ngOnInit() {
+    this.menuData = [...menu];
+    console.log(this.menuData);
+  }
+
+  // 获取菜单的 title
+  getMenuTitleByCode(code) {
+    return getMenuRelation(code) && getMenuRelation(code).label || '';
   }
 
 }
