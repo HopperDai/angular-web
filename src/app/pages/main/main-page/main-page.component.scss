@@ -1,0 +1,17 @@
+$menu-width: 240px;
+$menu-height: 100%;
+
+.main-wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu {
+  width: $menu-width;
+  height: $menu-height;
+  //
+  //> ul {
+  //  height: 100%;
+  //}
+}
