@@ -18,8 +18,6 @@ export class SidebarMenuComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.menuLevel);
-    // this.menuLevel = this.menuLevel - 1;
     this.menuItemClass = `menu-item-${this.menuLevel}`;
   }
 

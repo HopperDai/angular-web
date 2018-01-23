@@ -15,9 +15,8 @@ export const menu: Menu[] = [{
     code: 'submenu1',
     subMenu: [{
       code: 'submenu11',
-      subMenu: [{
-        code: 'submenu11',
-      }]
+    }, {
+      code: 'submenu11',
     }]
   }]
 }];
