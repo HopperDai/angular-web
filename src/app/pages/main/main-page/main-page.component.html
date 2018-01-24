@@ -1,39 +1,11 @@
 <div class="main-wrap">
   <div class="menu">
-    <!--<ul nz-menu [nzMode]="'inline'" nzTheme='dark' class="menu-list">-->
-      <!--<div *ngFor="let item of menuData">-->
-        <!--<li nz-menu-item *ngIf="!item.subMenu">-->
-          <!--<span title>{{getMenuTitleByCode(item.code)}}</span>-->
-        <!--</li>-->
-        <!--<li nz-submenu *ngIf="!!item.subMenu">-->
-          <!--<span title>{{getMenuTitleByCode(item.code)}}</span>-->
-          <!--<ul>-->
-            <!--<div *ngFor="let item of item.subMenu">-->
-              <!--<li nz-menu-item *ngIf="!item.subMenu">-->
-                <!--<span title>{{getMenuTitleByCode(item.code)}}</span>-->
-              <!--</li>-->
-              <!--<li nz-submenu *ngIf="!!item.subMenu">-->
-                <!--<span title>{{getMenuTitleByCode(item.code)}}</span>-->
-                <!--<ul>-->
-                  <!--<div *ngFor="let item of item.subMenu">-->
-                    <!--<li nz-menu-item *ngIf="!item.subMenu">-->
-                      <!--<span title>{{getMenuTitleByCode(item.code)}}</span>-->
-                    <!--</li>-->
-                    <!--<li nz-submenu *ngIf="!!item.subMenu">-->
-                      <!--<span title>{{getMenuTitleByCode(item.code)}}</span>-->
-                    <!--</li>-->
-                  <!--</div>-->
-                <!--</ul>-->
-              <!--</li>-->
-            <!--</div>-->
-          <!--</ul>-->
-        <!--</li>-->
-      <!--</div>-->
-    <!--</ul>-->
     <app-sidebar-menu [menuData]="menuData"></app-sidebar-menu>
   </div>
 
-  <div>2222</div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
 </div>
 
 
