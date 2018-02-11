@@ -1,10 +1,17 @@
 <ul *ngIf="!isSubmenu" nz-menu [nzMode]="'inline'" nzTheme='dark' class="menu-box">
-  <ng-template ngFor let-item [ngForOf]="menuData">
-    <li nz-menu-item *ngIf="!item.subMenu" [ngClass]="menuItemClass">
-      <span title class="menu-title">{{getMenuTitleByCode(item.code)}}</span>
+  <ng-template ngFor let-item let-i="index" [ngForOf]="menuData">
+    <!-- 默认选择首页 -->
+    <li nz-menu-item *ngIf="!item.subMenu" [ngClass]="menuItemClass" [nzSelected]="i===2">
+      <span title class="menu-title">
+        <i class="{{getMenuIconByCode(item.code)}}"></i>
+        {{getMenuTitleByCode(item.code)}}
+      </span>
     </li>
-    <li nz-submenu *ngIf="!!item.subMenu" [ngClass]="menuItemClass">
-      <span title class="menu-title">{{getMenuTitleByCode(item.code)}}</span>
+    <li nz-submenu *ngIf="!!item.subMenu" [ngClass]="menuItemClass" [nzOpen]="i===2">
+      <span title class="menu-title">
+        <i class="{{getMenuIconByCode(item.code)}}"></i>
+        {{getMenuTitleByCode(item.code)}}
+      </span>
       <app-sidebar-menu [menuData]="item.subMenu" [isSubmenu]="true" [menuLevel]="menuLevel+1"></app-sidebar-menu>
     </li>
   </ng-template>
@@ -12,12 +19,18 @@
 
 <!--生成的菜单列表会带有一个 nz-menu 属性，生成子菜单的时候则不需要-->
 <ul *ngIf="isSubmenu">
-  <ng-template ngFor let-item [ngForOf]="menuData">
-    <li nz-menu-item *ngIf="!item.subMenu" [ngClass]="menuItemClass">
-      <span title class="menu-title">{{getMenuTitleByCode(item.code)}}</span>
+  <ng-template ngFor let-item let-I="index" [ngForOf]="menuData">
+    <li nz-menu-item *ngIf="!item.subMenu" [ngClass]="menuItemClass" [nzSelected]="I===0">
+      <span title class="menu-title">
+        <i class="{{getMenuIconByCode(item.code)}}"></i>
+        {{getMenuTitleByCode(item.code)}}
+      </span>
     </li>
     <li nz-submenu *ngIf="!!item.subMenu" [ngClass]="menuItemClass">
-      <span title class="menu-title">{{getMenuTitleByCode(item.code)}}</span>
+      <span title class="menu-title">
+        <i class="{{getMenuIconByCode(item.code)}}"></i>
+        {{getMenuTitleByCode(item.code)}}
+      </span>
       <app-sidebar-menu [menuData]="item.subMenu" [isSubmenu]="true" [menuLevel]="menuLevel+1"></app-sidebar-menu>
     </li>
   </ng-template>

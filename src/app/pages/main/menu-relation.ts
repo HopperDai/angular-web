@@ -6,21 +6,21 @@ const index: MenuRelation[] = [{
   code: 'index',
   label: '首页',
   url: '',
-  iconUrl: ''
+  iconUrl: 'anticon anticon-home'
 }];
 
 const demo: MenuRelation[] = [{
   code: 'faAwesome',
   label: 'fa 图标',
   url: '',
-  iconUrl: ''
+  iconUrl: 'anticon anticon-flag'
 }];
 
 const test: MenuRelation[] = [{
   code: 'testSubmenu',
   label: '测试子菜单',
   url: '',
-  iconUrl: ''
+  iconUrl: 'anticon anticon-question-circle-o'
 }, {
   code: 'submenu1',
   label: '子菜单1',

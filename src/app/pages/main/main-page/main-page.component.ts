@@ -17,6 +17,7 @@ export class MainPageComponent implements OnInit {
   ngOnInit() {
     this.menuData = [...menu];
     console.log(this.menuData);
+
   }
 
   // 获取菜单的 title
