@@ -1,0 +1,98 @@
+[33mcommit 1c571dd2c7075356de674496b9ca931ae00c8d01[m[33m ([m[1;36mHEAD -> [m[1;32mfeat-export-pdf[m[33m, [m[1;31morigin/feat-export-pdf[m[33m)[m
+Author: daizengji <daizengji@gzkit.com.cn>
+Date:   Sun Feb 11 09:34:06 2018 +0800
+
+    feat: pdf export
+
+[33mcommit 5416fcb09d1a9cddd62a0a857928123b6312a338[m[33m ([m[1;32mfeat-route[m[33m)[m
+Author: daizengji <daizengji@gzkit.com.cn>
+Date:   Wed Jan 24 15:10:56 2018 +0800
+
+    feat: route
+
+[33mcommit a6146f9a1db776bcdc1a5dc35de19154eb19799e[m
+Author: daizengji <daizengji@gzkit.com.cn>
+Date:   Wed Jan 24 14:32:08 2018 +0800
+
+    :wrench: change devDependencies
+
+[33mcommit ada84aa7b6b3c53e93fc5769af365bdb227bef5c[m[33m ([m[1;31morigin/develop[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mdevelop[m[33m)[m
+Author: daizengji <daizengji@gzkit.com.cn>
+Date:   Wed Jan 24 13:20:03 2018 +0800
+
+    :wrench: change devDependencies to fix 'can not generate new component' bug
+
+[33mcommit 427734078eb5cc20f2c14e63efdb38312a0de465[m
+Merge: 161d2a4 dc69985
+Author: Hopper <hoppergoo@gmail.com>
+Date:   Tue Jan 23 09:39:26 2018 +0800
+
+    Merge pull request #1 from Hopperhub/feat-create-menu
+    
+    Feat create menu
+
+[33mcommit dc699857af27f5538631769ffe1c0db4c7a7a278[m
+Author: daizengji <daizengji@gzkit.com.cn>
+Date:   Tue Jan 23 09:34:35 2018 +0800
+
+    :bug: menu title padding bug
+
+[33mcommit 61c6c8ec1a0a31462766518b763a2ab7fb6919bc[m
+Author: daizengji <daizengji@gzkit.com.cn>
+Date:   Mon Jan 22 17:50:00 2018 +0800
+
+    feat: menu
+
+[33mcommit 4f06fa20645b969b846ab62cc9ee9ee17f3a5a5d[m
+Author: daizengji <daizengji@gzkit.com.cn>
+Date:   Mon Jan 22 15:12:15 2018 +0800
+
+    :memo: test git emoji
+
+[33mcommit 79e44f948d7fef82b0f478a7450af3f4b9c8453a[m
+Author: daizengji <daizengji@gzkit.com.cn>
+Date:   Tue Jan 16 14:07:14 2018 +0800
+
+    feat: menu config
+
+[33mcommit d5d1168532e40ad40e5ef8db600aec7426527efd[m
+Author: daizengji <daizengji@gzkit.com.cn>
+Date:   Mon Jan 15 13:23:52 2018 +0800
+
+    docs: README
+
+[33mcommit 2b129b240b2b26b2b08e475ce86eaad0a8f04e66[m
+Author: daizengji <daizengji@gzkit.com.cn>
+Date:   Mon Jan 15 13:22:06 2018 +0800
+
+    feat: framework function
+
+[33mcommit 37b9745082664e56df02d59f31663d236f96a4a0[m
+Author: daizengji <daizengji@gzkit.com.cn>
+Date:   Mon Jan 15 09:25:24 2018 +0800
+
+    zorro forRoot
+
+[33mcommit e23655cb8ed3e36108dc0db166b6b59d098ed515[m
+Author: daizengji <daizengji@gzkit.com.cn>
+Date:   Fri Jan 12 17:37:08 2018 +0800
+
+    create router configure
+
+[33mcommit 4e0932f6ff16e9e72a5c08280137e45aa015e6d0[m
+Author: daizengji <daizengji@gzkit.com.cn>
+Date:   Wed Jan 10 14:08:53 2018 +0800
+
+    clear app component
+
+[33mcommit 161d2a4049cd4e1af0aa28ea83947c8d2734ac49[m
+Author: daizengji <daizengji@gzkit.com.cn>
+Date:   Wed Jan 10 13:04:34 2018 +0800
+
+    引入 ng-zorro-antd UI 框架
+
+[33mcommit 1ef92ef28decc36042908e1f23ae0b44a48c4ddd[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: daizengji <daizengji@gzkit.com.cn>
+Date:   Wed Jan 10 11:24:35 2018 +0800
+
+    'origin'

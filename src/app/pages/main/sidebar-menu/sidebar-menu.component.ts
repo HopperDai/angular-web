@@ -30,4 +30,9 @@ export class SidebarMenuComponent implements OnInit {
   getMenuIconByCode(code) {
     return getMenuRelation(code) && getMenuRelation(code).iconUrl || '';
   }
+
+  // 获取菜单的 url
+  getUrlByCode(code) {
+    return getMenuRelation(code) && getMenuRelation(code).url || '';
+  }
 }
