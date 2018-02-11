@@ -1,13 +1,13 @@
 <ul *ngIf="!isSubmenu" nz-menu [nzMode]="'inline'" nzTheme='dark' class="menu-box">
   <ng-template ngFor let-item let-i="index" [ngForOf]="menuData">
     <!-- 默认选择首页 -->
-    <li nz-menu-item *ngIf="!item.subMenu" [ngClass]="menuItemClass" [nzSelected]="i===0">
+    <li nz-menu-item *ngIf="!item.subMenu" [ngClass]="menuItemClass" [nzSelected]="i===2">
       <span title class="menu-title">
         <i class="{{getMenuIconByCode(item.code)}}"></i>
         {{getMenuTitleByCode(item.code)}}
       </span>
     </li>
-    <li nz-submenu *ngIf="!!item.subMenu" [ngClass]="menuItemClass">
+    <li nz-submenu *ngIf="!!item.subMenu" [ngClass]="menuItemClass" [nzOpen]="i===2">
       <span title class="menu-title">
         <i class="{{getMenuIconByCode(item.code)}}"></i>
         {{getMenuTitleByCode(item.code)}}
@@ -19,8 +19,8 @@
 
 <!--生成的菜单列表会带有一个 nz-menu 属性，生成子菜单的时候则不需要-->
 <ul *ngIf="isSubmenu">
-  <ng-template ngFor let-item [ngForOf]="menuData">
-    <li nz-menu-item *ngIf="!item.subMenu" [ngClass]="menuItemClass">
+  <ng-template ngFor let-item let-I="index" [ngForOf]="menuData">
+    <li nz-menu-item *ngIf="!item.subMenu" [ngClass]="menuItemClass" [nzSelected]="I===0">
       <span title class="menu-title">
         <i class="{{getMenuIconByCode(item.code)}}"></i>
         {{getMenuTitleByCode(item.code)}}
