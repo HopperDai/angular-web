@@ -14,6 +14,14 @@ const demo: MenuRelation[] = [{
   label: 'fa 图标',
   url: '',
   iconUrl: 'anticon anticon-flag'
+}, {
+  code: 'demo',
+  label: 'demo',
+  iconUrl: 'anticon anticon-desktop'
+}, {
+  code: 'pdf',
+  label: '导出 pdf',
+  iconUrl: ''
 }];
 
 const test: MenuRelation[] = [{

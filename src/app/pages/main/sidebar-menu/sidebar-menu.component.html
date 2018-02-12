@@ -8,7 +8,7 @@
         {{getMenuTitleByCode(item.code)}}
       </span>
     </li>
-    <li nz-submenu *ngIf="!!item.subMenu" [ngClass]="menuItemClass" [nzOpen]="i===2">
+    <li nz-submenu *ngIf="!!item.subMenu" [ngClass]="menuItemClass">
       <span title class="menu-title">
         <i class="{{getMenuIconByCode(item.code)}}"></i>
         {{getMenuTitleByCode(item.code)}}

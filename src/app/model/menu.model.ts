@@ -3,6 +3,6 @@
 export interface MenuRelation {
   code: string;
   label: string;
-  url: string;
+  url?: string;
   iconUrl: string;
 }

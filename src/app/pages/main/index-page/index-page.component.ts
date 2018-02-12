@@ -10,11 +10,13 @@ import * as jsPDF from 'jspdf';
 export class IndexPageComponent implements OnInit {
   @ViewChild('pdfTemplate') pdfTemplate;
 
+  testArray = [1, 2, 4, 5];
+
   constructor() {
   }
 
   ngOnInit() {
-    console.log(jsPDF);
+    console.log(this.testArray.includes(3));
   }
 
   // 导出 pdf

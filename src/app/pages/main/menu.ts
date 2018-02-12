@@ -14,4 +14,9 @@ export const menu: Menu[] = [{
   subMenu: [{
     code: 'submenu1',
   }]
+}, {
+  code: 'demo',
+  subMenu: [{
+    code: 'pdf'
+  }]
 }];
